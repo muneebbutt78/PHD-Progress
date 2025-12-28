@@ -609,6 +609,41 @@ with tab2:
                             save_comments(comments)
                             st.success("Saved")
 
+st.markdown(
+    """
+    <style>
+    .whatsapp-share {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 25px;
+        right: 25px;
+        background-color: #25D366;
+        color: white;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 32px;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        z-index: 1000;
+        line-height: 60px;
+        text-decoration: none;
+    }
+    .whatsapp-share:hover {
+        background-color: #20b955;
+        color: white;
+    }
+    </style>
+
+    <a class="whatsapp-share"
+       href="https://wa.me/?text=PhD%20Progress%20Tracker%20App:%0Ahttps://phd-progress-tgftuokkmgpnf3n9e27gtz.streamlit.app/"
+       target="_blank"
+       title="Share this app on WhatsApp">
+        📤
+    </a>
+    """,
+    unsafe_allow_html=True
+)
+
 # =====================================================
 # FOOTER
 # =====================================================
