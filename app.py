@@ -612,29 +612,36 @@ with tab2:
 st.markdown(
     """
     <style>
+    /* Hide by default (desktop & tablets) */
     .whatsapp-share {
-        position: fixed;
-        width: 60px;
-        height: 60px;
-        bottom: 25px;
-        right: 25px;
-        background-color: #25D366;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
-        z-index: 1000;
-        cursor: pointer;
-        text-decoration: none;
+        display: none;
     }
-    .whatsapp-share:hover {
-        background-color: #20b955;
-    }
-    .whatsapp-share svg {
-        width: 34px;
-        height: 34px;
-        fill: white;
+
+    /* Show ONLY on mobile screens */
+    @media screen and (max-width: 768px) {
+        .whatsapp-share {
+            display: flex;
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+            z-index: 1000;
+            text-decoration: none;
+        }
+        .whatsapp-share:hover {
+            background-color: #20b955;
+        }
+        .whatsapp-share svg {
+            width: 34px;
+            height: 34px;
+            fill: white;
+        }
     }
     </style>
 
