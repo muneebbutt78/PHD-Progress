@@ -1,0 +1,32 @@
+# ===============================
+# Python / Streamlit
+# ===============================
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+.venv/
+.streamlit/secrets.toml
+
+# ===============================
+# OS
+# ===============================
+Thumbs.db
+.DS_Store
+
+# ===============================
+# PDFs (generated)
+# ===============================
+*.pdf
+
+# ===============================
+# 🚨 LARGE DATASETS (ABSOLUTE BLOCK)
+# ===============================
+Research_Documents/Data/Data/*.csv
+Research_Documents/Data/Data/*.xlsx
+
+# ===============================
+# ALLOW SPLIT DATA ONLY
+# ===============================
+!Research_Documents/Data/Data/*_parts/**
